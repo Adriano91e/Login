@@ -1,0 +1,22 @@
+<h1 align="center">Lista Prodotti</h1>
+
+  <mat-grid-list cols="5" rowHeight="6:1">
+
+    <mat-grid-tile style="background: azure">#</mat-grid-tile>
+    <mat-grid-tile style="background: azure">NOME</mat-grid-tile>
+    <mat-grid-tile style="background: azure">CODICE</mat-grid-tile>
+    <mat-grid-tile style="background: azure">DESCRIZIONE</mat-grid-tile>
+    <mat-grid-tile style="background: azure">QUANTITA'</mat-grid-tile>
+
+    <div *ngFor="let c of listProduct">
+    <mat-grid-tile>{{c.id}}</mat-grid-tile>
+    <mat-grid-tile>{{c.nome}}</mat-grid-tile>
+    <mat-grid-tile>{{c.codice}}</mat-grid-tile>
+    <mat-grid-tile>{{c.descrizione}}</mat-grid-tile>
+    <mat-grid-tile>{{c.quantita}}</mat-grid-tile>
+
+    </div>
+
+  </mat-grid-list>
+
+

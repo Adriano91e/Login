@@ -1,0 +1,25 @@
+<h1 align="center">Registrazione</h1>
+
+<body>
+<form class="example-form" (ngSubmit)="register()">
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="username" value="username"
+           [(ngModel)]="user.username" name="username" required>
+  </mat-form-field>
+
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="password" value="password" type="password"
+           [(ngModel)]="user.password" name="password" required>
+  </mat-form-field>
+
+  <button mat-raised-button>Submit</button>
+</form>
+
+<p><button mat-raised-button (click)="goBack()">Torna Indietro</button></p>
+
+</body>
+
+
+
